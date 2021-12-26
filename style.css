@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    color: #075985;
+    background-color: #22d3ee;
+}
+
+.card{
+    height: 540px;
+    width: 960px;
+    padding: 10px;
+    display: block;
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #1f2937;
+    box-shadow: 0 32px 32px -18px #1f2937;
+}
+
+.icons{
+    padding: 1%;
+    margin: 0% 1%;
+    width: 120px;
+    position: absolute;
+    top: 6%;
+    left: 2%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.nav{
+    padding: 1%;
+    width: 94%;
+    top: 0px;
+    
+}
+
+.fas{
+    padding: 2%;
+    font-size: xx-large;
+}
+
+h1{
+    font-size: xx-large;
+    padding: 2%;
+    top: 0px;
+    display: block;
+    width: 98%;
+    color: #0284c7;
+    font-weight: 600;
+    text-align: center;
+}
+
+.num{
+    font-size: large;
+    font-weight: 800;
+    list-style-type:decimal;
+    padding-left: 75px;
+}
+
+.line{
+    border-right: #075985 2px solid;
+    color: #0ea5e9;
+}
+
+.container{
+    display: flex;
+    font-family: cursive;
+}
+
+.t-red {
+    color: #ef4444;
+}
+
+.t-white {
+    color: #cbd5e1;
+}
+
+.t-yellow {
+    color: #facc15;
+    font-style: italic;
+}
+
+.t-green {
+    color: #58e635;
+}
+
+h3{
+    padding-left: 20px;
+    font-weight: 800;
+    font-size: large;
+    color: #0ea5e9;
+}
+
+span{
+    font-weight: 600;
+    font-size: large;
+}
+
+.credit{
+    position: absolute;
+    color: #0ea5e9;
+    bottom: 25px;
+    width: 98%;
+    text-align: center;
+}

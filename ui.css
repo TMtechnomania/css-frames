@@ -1,0 +1,179 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+img{
+    pointer-events: none;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    color: #f3f4f6;
+}
+
+.card{
+    height: 75vh;
+    width: 60vw;
+    margin: auto;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 40px;
+    display: flex;
+    background-image: url(https://9to5mac.com/wp-content/uploads/sites/6/2020/10/The-Desert-5-dragged.jpg?quality=82&strip=all&w=1000);
+    background-size: cover;
+    overflow: hidden;
+    background-color: #100f15;
+    box-shadow: 0 32px 32px -18px #1f2937;
+}
+
+.main{
+    width: 90%;
+    background-color: #100f15;
+    padding: 5vh;
+    padding-right: 12vh;
+    padding-bottom: 0%;
+    position: relative;
+}
+
+.wp{
+    width: 10%;
+}
+
+p{
+    color: #6b7280;
+    font-size: 150%;
+}
+
+p span{
+    font-weight: 700;
+    color: #f3f4f6;
+}
+
+.card h1{
+    font-size: 5vh;
+    padding-top: 1vh;
+    padding-right: 5vh;
+}
+
+.author{
+    padding-top: 4vh;
+    display: flex;
+    padding-right: 6vh;
+}
+
+/*.loader {
+    border: 8px solid #100f15;
+    border-bottom: 8px solid;
+    border-right: 8px solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    border-radius: 50%;
+    width: 10vh;
+    height: 10vh;
+    transform: rotate(45deg);
+}*/
+
+
+#cont{
+    background: -webkit-linear-gradient(left top, #fbbf24 0%, #f43f5e 100%);
+    width: 8vh;
+    height: 8vh;
+    padding: 0.6vh;
+    border-radius: 50%;
+    overflow: hidden;
+}
+  
+.pp{
+    height: 8vh;
+    width: 8vh;
+    background-image: url(https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=90&q=80);
+    background-position: center;
+    border-radius: 50%;
+    filter: grayscale(1);
+}
+
+.info{
+    padding-top: 1.4vh;
+    padding-left: 5vh;
+}
+
+.info p span{
+    font-weight: 600;
+}
+
+.fas{
+    color: #ed7d16;
+    padding-left: 1vh;
+}
+
+.content p{
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    font-weight: 500;
+    font-size: 160%;
+    color: #a3a3a3;
+    line-height: 150%;
+    padding-right: 10vh;
+    letter-spacing: 0.8px;
+}
+
+.code{
+    background-color: #1b1823;
+    width: 96%;
+    height: 100%;
+    margin-right: 4vh;
+    padding-top: 1vh;
+    padding-left: 2vh;
+    border-radius: 1.5vh 1.5vh 0 0;
+    font-size: 150%;
+    line-height: 160%;
+    vertical-align: middle;
+}
+
+.css{
+    font-family: 'Source Code Pro', monospace;
+    padding-left: 3vh;
+    padding-top: 1vh;
+    font-size: 90%;
+    letter-spacing: 1px;
+    padding-bottom: 2.5vh;
+}
+
+.orange{
+    color: #ed7d16;
+}
+
+.yellow{
+    color: #fef08a;
+}
+
+.white{
+    color: #f3f4f6;
+}
+
+.violet{
+    color: #8b5cf6;
+}
+
+.red{
+    color: #f43f5e;
+}
+
+.scrollbar{
+    padding: 5vh 2.2vh;
+    border-radius: 2.2vh;
+    right: 0px;
+    position: absolute;
+    background: -webkit-linear-gradient(left top, #fbbf24 0%, #f43f5e 100%);
+}
+/*
+.wp{
+    background-image: url(https://wallpapercave.com/wp/wp6423145.jpg);
+    background-position: center;
+    background-size: cover;
+}*/

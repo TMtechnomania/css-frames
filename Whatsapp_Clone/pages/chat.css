@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.header {
+    height: 10vh;
+    width: 100vw;
+    background-color: #128c7e;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+.header .back{
+    height: 10vh;
+    width: 12vw;
+    display: flex;
+}
+
+.back a{
+    display: block;
+    margin: auto;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.profile {
+    height: 10vh;
+    width: 66vw;
+}
+
+.profile a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.pp{
+    height: 10vh;
+    width: 7vh;
+    display: flex;
+}
+
+.pp img{
+    height: 6vh;
+    width: 6vh;
+    padding: 2vh 1vh 2vh 0;
+}
+
+.title{
+    opacity: 0.9;
+    padding-top: 2.5vh;
+}
+
+.title h3{
+    font-weight: 600;
+}
+
+.title h4{
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.icon{
+    padding-left: 1vh;
+    padding-right: 1vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.icon img{
+    height: 3.5vh;
+    width: auto;
+}
+
+#invert img{
+    filter: invert(1);
+    -webkit-filter: invert(1);
+    height: 4vh;
+}
+
+.main{
+    background-image: url(https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png);
+    background-size: cover;
+    display: block;
+    height: 82vh;
+    width: 100vw;
+}
+
+#myDIV {
+    background-image: url(https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png);
+    background-size: cover;
+    display: flex;
+    height: 8vh;
+    justify-content: space-evenly;
+}
+
+#myDIV input{
+    width: 68vw;
+    height: 4vh;
+    padding: 1vh 6vw;
+    border: none;
+    margin: 1vh 1vw;
+    border-radius: 6vh;
+    -webkit-border-radius: 6vh;
+    -moz-border-radius: 6vh;
+    -ms-border-radius: 6vh;
+    -o-border-radius: 6vh;
+    font-size: 2vh;
+}
+
+#myDIV input:focus{
+    outline: none;
+}
+
+#myDIV span img{
+    padding: 1.5vh;
+    margin: 1vh 1vw;
+    border-radius: 6vh;
+    background-color: #128c7e;
+    -webkit-border-radius: 6vh;
+    -moz-border-radius: 6vh;
+    -ms-border-radius: 6vh;
+    -o-border-radius: 6vh;
+}
+
+ul{
+    width: 80vw;
+    position: absolute;
+    margin: 0 0 0 20vw;
+    text-align: right;
+    padding: 1vh;
+    direction: rtl;
+}
+
+ul li {
+    right: 4vw;
+    position: relative;
+    display: block;
+    z-index: 2;
+    font-size: 1.8vh;
+    line-height: 2vh;
+    margin: 0 0 0 30vw;
+    padding: 1vh 4vw;
+    background: #fafafa;
+    width: fit-content;
+    margin: 0.5vh 2vw 0.5vh 2vw;
+    font-size: 18px;
+    transition: 0.2s;
+    list-style: none;
+    border-radius: 1vh;
+    /*makethelistitemsunselectable*/-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-border-radius: 1vh;
+    -moz-border-radius: 1vh;
+    -ms-border-radius: 1vh;
+    -o-border-radius: 1vh;
+}
+
+  ul li:focus{
+    cursor: pointer;
+    position: absolute;
+    right: 4vw;
+    padding: 1vh 4vw;
+    background: #fafafa;
+    width: fit-content;
+    max-width: 80vw;
+    margin: 0.5vh 2vw;
+    font-size: 18px;
+    transition: 0.2s;
+    list-style: none;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  ul li:hover {
+    background: #fafafa;
+  }
+
+  .unselectable li{
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+     -o-user-select: none;
+     user-select: none
+   }
+
+
+li .triangle{
+    display: block;
+    width: 0;
+    height: 0;
+    border: transparent 2vh solid;
+    border-top:#fafafa 2vh solid;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: -1vh;
+}

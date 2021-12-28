@@ -1,0 +1,66 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  #camera, #camera--view, #camera--sensor, #camera--output{
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+  }
+  #camera--view, #camera--sensor, #camera--output{
+      transform: scaleX(-1);
+      filter: FlipH;
+  }
+  #camera--trigger{
+      width: 10vh;
+      height: 10vh;
+      background-color: transparent;
+      color: white;
+      font-size: 16px;
+      border-radius: 7vh;
+      border: white 0.5vh solid;
+      text-align: center;
+      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+      position: fixed;
+      bottom: 30px;
+      left: calc(50% - 5.2vh);
+      -webkit-border-radius: 7vh;
+      -moz-border-radius: 7vh;
+      -ms-border-radius: 7vh;
+      -o-border-radius: 7vh;
+}
+  .taken{
+      height: 100px!important;
+      width: 100px!important;
+      transition: all 0.5s ease-in;
+      border: solid 3px white;
+      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+      top: 20px;
+      right: 20px;
+      z-index: 2;
+  }
+
+  a{
+      position: absolute;
+      top: 4vh;
+      left: 4vh;
+  }
+
+  img#flash{
+      height: 4vh;
+      width: fit-content;
+      position: absolute;
+      bottom: 6vh;
+      left: 15vw;
+  }
+
+img#camera{
+    height: 3vh;
+    width: 4vh;
+    position: absolute;
+    bottom: 6.5vh;
+    right: 15vw;
+}

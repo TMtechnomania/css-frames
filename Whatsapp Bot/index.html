@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <li><a href=""><img src="https://static.xx.fbcdn.net/rsrc.php/ym/r/36B424nhiL4.svg" alt="WhatsApp"></a></li>
+        <li><a href="#new">New User</a></li>
+        <li><a href="#renew">Renewal</a></li>
+        <li><a href="#coupon">Coupon</a></li>
+        <li><a href="#brochure">Brochure</a></li>
+    </nav>
+    <section id="new">
+        <h2>Send <span>instructions</span> to New User</h2>
+        <form>
+            <label for="phonenu">Enter Phone Number:</label>
+            <input type="tel" name="phone" id="phonenu" placeholder="Phone Number" maxlength="10" size="18" required><br><br><br>
+            <label for="msgnu">Enter your message:</label><br><br>
+            <textarea type="text" spellcheck="true" name="msgnu" id="msgnu" maxlength="1000" placeholder="Enter message here.">Hello, My name is Gargi. We're glad you've chosen us, and we want to show our appreciation by giving you a 2 Hour free trial of our product. 
+If you like our product, you can apply "Coupon Code" to get instant 1000 Rs. off on purchase of 1 years subscription.
+
+Regards ICS Technical Team.
+
+            </textarea><br><br>
+            <button id="submit" onclick="newu()">Submit</button>
+        </form>
+    </section>
+
+    <section id="renew">
+        <h2>Send <span>instructions</span> to Old User</h2>
+        <form>
+            <label for="phoneou">Enter Phone Number:</label>
+            <input type="tel" name="phone" id="phoneou" placeholder="Phone Number" maxlength="10" size="18" required><br><br><br>
+            <label for="msgou">Enter your message:</label><br><br>
+            <textarea type="text" spellcheck="true" name="msgnu" id="msgou" maxlength="1000" placeholder="Enter message here.">Hello, My name is Gargi. We're glad you've are back, and we want to show our appreciation by giving 1000Rs. off. You can apply "Coupon Code" to get instant 1000 Rs. off on purchase of 1 years subscription.
+
+Regards ICS Technical Team.
+
+            </textarea><br><br>
+            <button id="submit" onclick="oldu()">Submit</button>
+        </form>
+    </section>
+
+    <section id="coupon">
+        <h2>Send <span>Coupon Code</span> to New / Old User</h2>
+        <form>
+            <label for="phonecc">Enter Phone Number:</label>
+            <input type="tel" name="phone" id="phonecc" placeholder="Phone Number" maxlength="10" size="18" required><br><br><br>
+            <label for="msgcc">Enter your message:</label><br><br>
+            <textarea type="text" spellcheck="true" name="msgnu" id="msgcc" maxlength="1000" placeholder="Enter message here.">Hello, My name is Gargi. Here is Coupon of 1000 Rs. You can apply "Coupon Code" to get instant 1000 Rs. off on purchase of 1 years subscription.
+
+Regards ICS Technical Team.
+
+            </textarea><br><br>
+            <button id="submit" onclick="cc()">Submit</button>
+        </form>
+    </section>
+
+    <section id="brochure">
+        <h2>Send <span>Brochure</span> to New User</h2>
+        <form>
+            <label for="phoneb">Enter Phone Number:</label>
+            <input type="tel" name="phone" id="phoneb" placeholder="Phone Number" maxlength="10" size="18" required><br><br><br>
+            <label for="msgb">Enter your message:</label><br><br>
+            <textarea type="text" spellcheck="true" name="msgnu" id="msgb" maxlength="1000" placeholder="Enter message here.">Hello, My name is Gargi.
+
+
+Regards ICS Technical Team.
+
+            </textarea><br><br>
+            <button id="submit" onclick="bro()">Submit</button>
+        </form>
+    </section>
+
+    <script>
+        
+        function newu() {
+            let phoneArr   = document.getElementById("phonenu").value;
+            const msgnu    = document.getElementById("msgnu").value;
+            const url  = "https://api.whatsapp.com/send/?phone=91" + phoneArr + "&text=" + msgnu;
+            var wnd = window.open(url, '_blank');
+        }
+
+
+        function oldu() {
+            let phoneArr   = document.getElementById("phoneou").value;
+            const msgnu    = document.getElementById("msgou").value;
+            const url  = "https://api.whatsapp.com/send/?phone=91" + phoneArr + "&text=" + msgnu;
+            window.open(url, '_blank').focus();
+        }
+
+        function cc() {
+            let phoneArr   = document.getElementById("phonecc").value;
+            const msgnu    = document.getElementById("msgcc").value;
+            const url  = "https://api.whatsapp.com/send/?phone=91" + phoneArr + "&text=" + msgnu;
+            window.open(url, '_blank').focus();
+        }
+
+        function bro() {
+            let phoneArr   = document.getElementById("phoneb").value;
+            const msgnu    = document.getElementById("msgb").value;
+            const url  = "https://api.whatsapp.com/send/?phone=91" + phoneArr + "&text=" + msgnu;
+            window.open(url, '_blank').focus();
+        }
+    </script>
+</body>
+</html>

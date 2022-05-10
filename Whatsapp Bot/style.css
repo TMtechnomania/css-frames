@@ -1,0 +1,112 @@
+:root {
+    --var-pcolor: #128c7e;
+    --var-tcolor: #f8f9fa;
+    --var-scolor: #273443;
+    --var-white: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+body{
+    background-color: var(--var-tcolor);
+}
+
+nav{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    padding: 2.5vh 22.2vw;
+    justify-content: space-between;
+    background-color: var(--var-pcolor);
+    align-items: center;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--var-tcolor);
+    font-size: large;
+    font-weight: 600;
+}
+
+section{
+    height: 100vh;
+    width: 60vw;
+    padding: 20vh 5vw;
+    display: block;
+    margin: auto;
+    background-color: var(--var-white);
+    text-align: center;
+    font-size: 1.8vh;
+    z-index: 10;
+    position: relative;
+}
+
+h2{
+    padding: 0vh 1vh 4vh 1vh;
+}
+
+span{
+    color: var(--var-pcolor);
+    text-transform: capitalize;
+}
+
+input , textarea{
+    padding: 1vh;
+    border: none;
+    background-color: var(--var-tcolor);
+    font-size: 1.8vh;
+    border-radius: 0.5vh;
+    -webkit-border-radius: 0.5vh;
+    -moz-border-radius: 0.5vh;
+    -ms-border-radius: 0.5vh;
+    -o-border-radius: 0.5vh;
+}
+
+input , textarea:focus{
+    border: none;
+    outline: none;
+}
+
+textarea{
+    width: 50vw;
+    min-height: 20vh;
+    resize: none;
+}
+
+#submit{
+    text-transform: uppercase;
+    background-color: var(--var-pcolor);
+    padding: 1vh 2vh;
+    cursor: pointer;
+    align-items: center;
+    color: var(--var-tcolor);
+}
+
+#submit:hover{
+    box-shadow: 0vh 1vh 2vh -1vh var(--var-pcolor);
+}
+
+button{
+    outline: none;
+    border: none;
+    font-size: 1.5vh;
+    border-radius: 0.5vh;
+    -webkit-border-radius: 0.5vh;
+    -moz-border-radius: 0.5vh;
+    -ms-border-radius: 0.5vh;
+    -o-border-radius: 0.5vh;
+}
